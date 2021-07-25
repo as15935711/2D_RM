@@ -149,11 +149,13 @@ public class Enemy : MonoBehaviour
         // 如果 敵人 x 大於 玩家 x 就代表玩家在左邊 角度 180
         if (transform.position.x > player.position.x)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            
+             transform.eulerAngles = new Vector3(0, 180, 0);
         }
         // 否則 敵人 x 小於 玩家 x 就代表玩家在右邊 角度 0
         else
         {
+           // transform.eulerAngles = new Vector3(0, 0, 0);
             transform.eulerAngles = Vector3.zero;
         }
     }
